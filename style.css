@@ -1,0 +1,113 @@
+/* base so site*/
+:root{                                          /*declarando variavel dentro do CSS */
+    --vermelho:#E50914 ; 
+    --preto:#141414;
+}
+
+/*resetando css*/
+*{                      
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;                     /*para que os elementos em tela tenham o tamanho definido*/
+}
+
+body{
+    background-color: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+ 
+}
+
+header .container{
+    display: flex;                           /*utilizando flexbox(alinhar elementos em tela)*/
+    flex-direction: row;
+    align-items: center ;
+    justify-content: space-between;            /*colocando espaco entre elementos*/
+}
+
+header .logo{
+    margin-left: 10px;
+    font-family: 'Bebas Neue', cursive;
+    color: var(--vermelho);
+    font-size: 60px;
+    
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right:15px ;
+    font-size: 27px;
+}
+
+header nav a:hover{                           /*com o hover quando mouse estiver por cima muda a cor*/
+    color: #fff;
+}      
+
+header div button :hover{
+    color: white;
+}
+
+/*filmes principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgb(0,0,0,.50),rgb(0,0,0,.50)100%), url('/images/capa.jpg'); /*gradiente serve para mudar a coloracao e deixar um pouco mais escura(nesse caso)*/
+    background-size: cover;                                                                      /*no gradiente se deve passar duas cores*/  
+    height: 800px;  
+    margin-bottom: 2%; 
+
+    display: flex;                  /*muda display para flex*/
+    flex-direction:column ;           /* coloca em coluna*/
+    justify-content: center;          /*centraliza*/
+    align-items: flex-start;          /*comeca da esquerda para direita*/
+}
+
+.titulos-carrosel{
+    margin-top: 0.3%;
+    margin-bottom: 1%;
+    font-size: 30px;
+    font-family: 'Arial', Times, serif;
+}
+
+.filme-principal .descricao{
+    font-size: 30px;
+    font-family: 'Arial', Times, serif;
+    margin-bottom:3%;
+}
+
+.filme-principal .container{
+    width: 80%;
+}
+
+.botao{
+margin-right: 2%;
+
+background-color: rgba(0,0,0,.50);
+
+
+border: none;
+color: white;
+padding: 20px 40px;
+cursor: pointer;
+
+font-size: 19px ;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+transition: 0.5s ease all;              /*ao passar o cursor no botao ha uma transicao de 3s para a mudanca de cor*/
+}
+
+.botao:hover{                           /*ao passar o cursor no botao as cores do back e font mudam*/
+    background-color: white;
+    color: black;
+}
+
+.title{
+    font-size: 75px;
+}
+
+.box-filme{
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+

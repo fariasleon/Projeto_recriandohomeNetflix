@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <title>NETFLIX CLONE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="Stylesheet" href="style.css">
+    
+    <!-- Responsividade-->
+    <link rel="stylesheet" href="responsive.css">
+
+    <!--arqvs owl css-->
+   <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+   <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    </head>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="#">Início</a>          <!--alt+shift+ seta baixo clona linha-->
+                <a href="#">Séries</a>          <!--alt+shift+ seta baixo-->
+                <a href="#">Filmes</a>          <!--alt+shift+ seta baixo-->
+                <a href="#">Documentários</a>          <!--alt+ shift + seta baixo-->
+            </nav>
+        </div>
+    </header> 
+    <body>
+        <main>                   
+            <div class="filme-principal">      
+                <div class="container">
+                    <h3 class="title">Breaking Bad</h3>
+                    <p  class="descricao">Ao saber que tem câncer, um professor passa a fabricar metanfetamina pelo futuro da família, mudando o destino de todos.</p>  
+                    <div>                      
+                       <button role="button"  class="botao"> 
+                           <i class="fa-solid fa-play"></i>         <!--role=button serve para indentifiar que e um botao independente do dispositivo utilizado-->
+                            ASSISTIR AGORA 
+                        </button>                                                                                   
+                        <button role="button"  class="botao">
+                            <i class="fa-solid fa-circle-info"></i>
+                            MAIS INFORMAÇÕS
+                        </button>    
+                    </div> 
+                </div>
+            </div>
+        </main>
+        <!--1 carrosel-->
+        <h2 class="titulos-carrosel">Mais assistidos</h2>
+        <div class="carrosel-filmes">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class=".box-filme" src="images/img1.jpg" alt="" srcset="">
+                </div>
+                
+                <div class="item">
+                    <img class=".box-filme" src="images/img2.jpg" alt="" srcset="">
+                </div>
+                
+                <div class="item">
+                    <img class=".box-filme" src="images/img3.jpg" alt="" srcset="">
+                </div>
+                
+                <div class="item">
+                    <img class=".box-filme" src="images/img4.jpg" alt="" srcset="">
+                </div>
+                
+                <div class="item">
+                    <img class=".box-filme" src="images/img5.jpg" alt="" srcset="">
+                </div>
+                
+                <div class="item">
+                    <img class=".box-filme" src="images/img6.jpg" alt="" srcset="">
+                </div>
+                
+                <div class="item">
+                    <img class=".box-filme" src="images/img7.jpg" alt="" srcset="">
+                </div>
+
+                <div class="item">
+                    <img class=".box-filme" src="images/img8.jpg" alt="" srcset="">
+                </div>
+
+                <div class="item">
+                    <img class=".box-filme" src="images/img9.jpg" alt="" srcset="">
+                </div>            
+            </div>
+        </div>
+        <!--2 carrosel -->
+        <h2 class="titulos-carrosel">Filmes</h2>
+        <div class="carrosel-filmes ">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class=".box-filme" src="images/filmes/f1.jpg" alt="" srcset="">
+                </div>
+                
+                <div class="item">
+                    <img class=".box-filme" src="images/filmes/f2.jpg" alt="" srcset="">
+                </div>
+                
+                <div class="item">
+                    <img class=".box-filme" src="images/filmes/f3.jpg" alt="" srcset="">
+                </div>
+                
+                <div class="item">
+                    <img class=".box-filme" src="images/filmes/f4.jpg" alt="" srcset="">
+                </div>
+                
+                <div class="item">
+                    <img class=".box-filme" src="images/filmes/f5.jpg" alt="" srcset="">
+                </div>
+                
+                <div class="item">
+                    <img class=".box-filme" src="images/img6.jpg" alt="" srcset="">
+                </div>
+                
+                <div class="item">
+                    <img class=".box-filme" src="images/img7.jpg" alt="" srcset="">
+                </div>
+
+                <div class="item">
+                    <img class=".box-filme" src="images/img8.jpg" alt="" srcset="">
+                </div>
+
+                <div class="item">
+                    <img class=".box-filme" src="images/img9.jpg" alt="" srcset="">
+                </div> 
+            </div>
+        </div>
+         <!--3 carrosel -->
+         <h2 class="titulos-carrosel">Séries</h2>
+         <div class="carrosel-filmes ">
+             <div class="owl-carousel owl-theme">
+                <div class="item">
+                     <img class=".box-filme" src="images/séries/s2.jpg" alt="" srcset="">
+                 </div>
+                 <div class="item">
+                     <img class=".box-filme" src="images/séries/s3.jpg" alt="" srcset="">
+                 </div>
+                 <div class="item">
+                     <img class=".box-filme" src="images/séries/s4.jpg" alt="" srcset="">
+                 </div>
+                 <div class="item">
+                     <img class=".box-filme" src="images/séries/s5.jpg" alt="" srcset="">
+                 </div>
+                 <div class="item">
+                     <img class=".box-filme" src="images/séries/s6.jpg" alt="" srcset="">
+                 </div>
+                 <div class="item">
+                     <img class=".box-filme" src="images/séries/s7.jpg" alt="" srcset="">
+                 </div>
+                 
+                
+             </div>
+         </div>
+        <!-- é interessante colocar o link JS por ultimo pois a pagina carrega em ordem seq. se a o aq js exec antes da pag carregar pode ocasionar em algum erro -->
+        <script src="https://kit.fontawesome.com/ada3d603e5.js" crossorigin="anonymous"></script>       <!--linkando arqs owl e js e chamando comandos-->
+        <script src="js/owl/jquery.min.js"></script>
+        <script src="js/owl/owl.carousel.min.js"></script>
+        <script src="js/owl/main.js"></script>
+    </body>
+</html>
